@@ -1,0 +1,28 @@
+POST http://localhost:3211/Student/adddata
+Content-Type: application/json
+
+{
+    "stdName":"Ravi Kumar",
+    "stdAge":"45",
+    "stdEmail":"ravi12312@gmail.com",
+    "stdPassword":"ravi11@1234"
+}
+
+###
+GET http://localhost:3211/Student/showdata
+###
+GET http://localhost:3211/Student/singledata/664ed9a4d7905bd3df6e193d
+###
+PUT http://localhost:3211/Student/update/664ed9a4d7905bd3df6e193d
+Content-Type: application/json
+
+{
+    "stdName":"krishna",
+    "stdAge":"21",
+    "stdEmail":"sai@gmail.com",
+    "stdPassword":"Sai@1234"
+}
+
+
+###
+DELETE  http://localhost:3211/Student/delete/664ed9a4d7905bd3df6e193d
